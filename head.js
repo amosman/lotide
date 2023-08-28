@@ -11,12 +11,11 @@ const assertEqual = function(actual, expected) {
 
 const head = function(array , item) {
 
-  return array[0] 
+  return array[0]
 }
 
-assertEqual(head(["Lighthouse Labs", "Bootcamp"]), "Lighthouse Labs" );
+assertEqual(head(["Lighthouse Labs", "Bootcamp"]), "Lighthous Labs" );
 assertEqual(head(["football", "soccer"]), "Football");
 assertEqual(head([1,1]), 1);
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([]), "Hello");

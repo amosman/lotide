@@ -11,7 +11,7 @@ const eqArrays = function(array1 , array2) {
   }
 };
 
-const assertArrayEqual = function(array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   let isFalse = false;
   if (array1.length !== array2.length) {
     console.log(`🛑🛑🛑 Assertion Failed`);
@@ -50,11 +50,11 @@ const middle = function(array) {
 
 }
 
-eqArrays(assertArrayEqual(middle([1]), []), []);// => []
-eqArrays(assertArrayEqual(middle([1, 2]), []),[]); // => []
-eqArrays(assertArrayEqual(middle([1, 2, 3]), [2]), [2]); // => [2]
-eqArrays(assertArrayEqual(middle([1, 2, 3, 4, 5]), [3]), [3]); // => [3]
-eqArrays(assertArrayEqual(middle([1, 2, 3, 4]), [2, 3]), [2, 3]);/// => [2, 3]
-eqArrays(assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]), [3, 4]);// => [3, 4]
-eqArrays(assertArrayEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]), [4]);// => [4]
-eqArrays(assertArrayEqual(middle([1, 2, 3, 4, 5, 6, 7, 8]), [4, 5]),[4, 5]);// => [4, 5]
+eqArrays(assertArraysEqual(middle([1]), []), []);// => []
+eqArrays(assertArraysEqual(middle([1, 2]), []),[]); // => []
+eqArrays(assertArraysEqual(middle([1, 2, 3]), [2]), [2]); // => [2]
+eqArrays(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]), [3]); // => [3]
+eqArrays(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]), [2, 3]);/// => [2, 3]
+eqArrays(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]), [3, 4]);// => [3, 4]
+eqArrays(assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]), [4]);// => [4]
+eqArrays(assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8]), [4, 5]),[4, 5]);// => [4, 5]

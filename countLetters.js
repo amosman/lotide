@@ -14,7 +14,6 @@ const sentenceLowerCase = sentence.toLowerCase();
 for (let letter of sentenceLowerCase) {
   if (!letters[letter]) {
     letters[letter] = 1;
-
   } else {
     letters[letter] = letters[letter] + 1;
   }

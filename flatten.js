@@ -1,4 +1,4 @@
-const assertArrayEqual = function(array1 , array2) {
+const assertArraysEqual = function(array1 , array2) {
   let isFalse = false;
   if (array1.length !== array2.length) {
     console.log(`🛑🛑🛑 Assertion Failed`);
@@ -30,4 +30,4 @@ const flatten = function(array) {
   return newArray;
 };
 
-assertArrayEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => [1, 2, 3, 4, 5, 6]
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); // => [1, 2, 3, 4, 5, 6]

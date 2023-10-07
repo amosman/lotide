@@ -19,7 +19,7 @@ const eqArrays = function(array1 , array2) {
   }
 }; 
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true ); // => true
+assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true ); // => true
+assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false ); // => false

@@ -38,6 +38,6 @@ const map = function( array, callback) {
  const results3 = map(words3, word => word[0]);
 //  console.log(results3);
 
-assertArraysEqual(eqArrays(results1, results2), true); // => true
-assertArraysEqual(eqArrays(results1, results3), false ); // => false
-assertArraysEqual(eqArrays(results2, results3), false ); // => false
+assertArraysEqual(results1, results2); // => true
+assertArraysEqual(results1, results3); // => false
+assertArraysEqual(results2, results3); // => false

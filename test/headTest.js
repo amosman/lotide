@@ -1,8 +1,19 @@
 const head = require('../head');
-const assertEqual = require('../assertEqual');
-
-assertEqual(head(["Lighthouse Labs", "Bootcamp"]), "Lighthous Labs" );
-assertEqual(head(["football", "soccer"]), "Football");
-assertEqual(head([1,1]), 1);
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+const assert = require('chai').assert;
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5'); 
+  });
+  it("returns  'Lighthouse Labs' for ['Lighthouse Labs', 'Bootcamp']", () => {
+    assert.strictEqual(head(['Lighthouse Labs', 'Bootcamp']), 'Lighthouse Labs'); 
+  })
+  it("returns 'Football' for ['Football', 'soccer']", () => {
+    assert.strictEqual(head(['Football', 'soccer']), 'Football'); 
+  });
+  it("returns 'Hello' for ['Lighthouse', 'Labs']", () => {
+    assert.strictEqual(head(['Hello','Lighthouse', 'Labs']), 'Hello'); 
+  });
+});
